@@ -79,8 +79,8 @@ body, html {
 }
 
 .circle:hover {
-  background-color: white;
-  cursor: pointer;
+  background-color: #FFED46;
+  /* cursor: pointer; */
 }
 
 .c01 {
