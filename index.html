@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Три сапога — пара</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{https://yadimaksta.github.io/TRISAPOGAPARAJSPOSTER/}">
+    <meta property="og:title" content="Три сапога — пара">
+    <meta property="og:description" content="Веб-плакат обувного для пришельцев «Три сапога — пара»">
+    <meta property="og:image" content="../images/metaimg.png">
+    <meta name="twitter:card" content="summary">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="canvas">
+        <div class="circle c01"></div>
+        <div class="circle c02"></div>
+        <div class="circle c03"></div>
+        <div class="circle c04"></div>
+        <div class="circle c05"></div>
+        <div class="circle c06"></div>
+        <div class="circle c07"></div>
+        <div class="circle c08"></div>
+      </div>
+    </div>
+
+    <script>
+      let container = document.querySelector('.container');
+      let canvas = document.querySelector('.canvas');
+      container.addEventListener('mousemove', (e) => {
+        let x = e.clientX - container.getBoundingClientRect().left;
+        let y = e.clientY - container.getBoundingClientRect().top;
+        canvas.style.transform = `translate(-${x*2}px, -${y*2}px)`;
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Три сапога — пара</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{https://yadimaksta.github.io/TRISAPOGAPARAJSPOSTER/}">
+    <meta property="og:title" content="Три сапога — пара">
+    <meta property="og:description" content="Веб-плакат обувного для пришельцев «Три сапога — пара»">
+    <meta property="og:image" content="../images/metaimg.png">
+    <meta name="twitter:card" content="summary">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style media="screen">
+      @font-face {
+        font-family: 'Helvetica';
+        src: url('../fonts/HelveticaNeueCyr-Roman.ttf') format("truetype");
+      }
+      .cursor {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #FD4E2B;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+      .cursorLabel {
+        width: 65px;
+        height: 34px;
+        border-radius: 16px;
+        background-color: #FD4E2B;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        font-family: Helvetica;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 6px;
+        transform: translate(16px, -32px);
+        pointer-events: none;
+      }
+      .click {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursorLabel">move</div>
+
+    <script type="text/javascript">
+      $(document).mousemove(function(e){
+        $(".cursor").css({left: e.clientX, top: e.clientY})
+        setTimeout(function(){
+          $(".cursorLabel").css({left: e.clientX, top: e.clientY})
+        }, 20)
+      })
+      $(document).ready(function(){
+        $(".cursor").click(function(){
+          $(".cursor").addClass("click");
+        });
+      });
+    </script>
+
+    <div class="pers">
+      <svg width="900" height="681" viewBox="0 0 900 681" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="persBody" d="M724.716 571.088L826.247 624.143L797.187 145.963C740.412 290.812 542.831 309.1 460.435 177.133L440.974 145.963C361.547 231.65 276.335 268.015 137.818 264.408L569.483 489.972L91.9004 489.972L91.9004 625.465L110.018 600.371C142.918 554.805 212.3 560.875 236.788 611.462L250.273 639.32L268.391 614.227C301.291 568.661 370.672 574.731 395.16 625.318L408.645 653.176L426.534 628.351C459.427 582.704 528.908 588.783 553.375 639.449L566.681 667.003L584.569 642.178C617.463 596.53 686.943 602.609 711.41 653.275L724.716 680.829L724.716 571.088Z" fill="#FD4E2B"/>
+      </svg>
+      <div class="eyeWhite1">
+        <div class="eye"></div>
+      </div>
+      <div class="eyeWhite2">
+        <div class="eye"></div>
+      </div>
+    </div>
+
+    <!-- <script>
+      document.querySelector('body').addEventListener('mousemove', eyeball);
+      function eyeball(){
+        var eye = document.querySelectorAll('.eye');
+        eye.forEach(function(eye){
+          let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+          let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+          let radian = Math.atan2(event.pageX - x, event.pageY - y);
+          let rot = (radian * (180 / Math.PI) * -1) + 270;
+          eye.style.transform = "rotate("+ rot + "deg)";
+        })
+      }
+    </script> -->
+  </body>
+</html>

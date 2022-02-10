@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  cursor: none;
+}
+
+.pers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#persBody:hover {
+  fill: #FFED46;
+}
+
+.eyeWhite1 {
+  width: 207px;
+  height: 207px;
+  border-radius: 50%;
+  position: absolute;
+  top: 145px;
+  left: 0px;
+  background-color: white;
+}
+
+.eyeWhite2 {
+  width: 207px;
+  height: 207px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 693px;
+  background-color: white;
+}
+
+.eye {
+  position: relative;
+  top: 50%;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3840px;
+  height: 2160px;
+  transition: 3s ease-out;
+  /* border: 2px white solid; */
+}
+
+.circle {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  background-color: #FD4E2B;
+}
+
+.circle:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.c01 {
+  left: 429px;
+  top: 313px;
+}
+
+.c02 {
+  left: 1570px;
+  top: 171px;
+}
+
+.c03 {
+  left: 1075px;
+  top: 942px;
+}
+
+.c04 {
+  left: 316px;
+  top: 1444px;
+}
+
+.c05 {
+  left: 2285px;
+  top: 790px;
+}
+
+.c06 {
+  left: 1920px;
+  top: 1588px;
+}
+
+.c07 {
+  left: 3018px;
+  top: 313px;
+}
+
+.c08 {
+  left: 3240px;
+  top: 1244px;
+}
