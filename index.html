@@ -12,9 +12,60 @@
     <meta property="og:description" content="Веб-плакат обувного для пришельцев «Три сапога — пара»">
     <meta property="og:image" content="../images/metaimg.png">
     <meta name="twitter:card" content="summary">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style media="screen">
+      @font-face {
+        font-family: 'Helvetica';
+        src: url('../fonts/HelveticaNeueCyr-Roman.ttf') format("truetype");
+      }
+      .cursor {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #FD4E2B;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+      .cursorLabel {
+        width: 65px;
+        height: 34px;
+        border-radius: 16px;
+        background-color: #FD4E2B;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        font-family: Helvetica;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 6px;
+        transform: translate(9px, -43px);
+        pointer-events: none;
+      }
+      .click {
+        background-color: black;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="cursor"></div>
+    <div class="cursorLabel">move</div>
+
+    <script type="text/javascript">
+      $(document).mousemove(function(e){
+        $(".cursor").css({left: e.clientX, top: e.clientY})
+        setTimeout(function(){
+          $(".cursorLabel").css({left: e.clientX, top: e.clientY})
+        }, 20)
+      })
+    </script>
+
     <div class="container">
       <div class="canvas">
         <div class="circle c01"></div>
@@ -34,7 +85,7 @@
       container.addEventListener('mousemove', (e) => {
         let x = e.clientX - container.getBoundingClientRect().left;
         let y = e.clientY - container.getBoundingClientRect().top;
-        canvas.style.transform = `translate(-${x*2}px, -${y*2}px)`;
+        canvas.style.transform = `translate(-${x*2}px, -${y*2.4}px)`;
       })
     </script>
   </body>
