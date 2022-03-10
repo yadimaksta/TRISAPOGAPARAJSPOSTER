@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body, html {
   overflow: hidden;
   background-color: black;
@@ -11,12 +10,13 @@ body, html {
   height: 100vh;
   cursor: none;
 }
-
 @font-face {
   font-family: 'Helvetica';
   src: url('../fonts/HelveticaNeueCyr-Roman.ttf') format("truetype");
 }
 
+
+/* СТИЛИЗАЦИЯ КУРСОРА */
 .cursor {
   width: 18px;
   height: 18px;
@@ -28,16 +28,6 @@ body, html {
   z-index: 100;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: width 0.1s ease-out, height 0.1s ease-out;
-}
-.cursorClick {
-  width: 12px;
-  height: 12px;
-  transition: width 0.1s ease-out, height 0.1s ease-out;
-}
-.cursorDraw {
-  width: 8px;
-  height: 8px;
   transition: width 0.1s ease-out, height 0.1s ease-out;
 }
 .cursorLabel {
@@ -61,6 +51,21 @@ body, html {
 .cursorLabel::after {
   content: "move";
 }
+
+/* КУРСОР ПРЕСС */
+.objectColorClick {
+  fill: #FFF173;
+}
+.objectColorClickBGCOLOR {
+  background-color: #FFF173;
+}
+
+/* КУРСОР КЛИК */
+.cursorClick {
+  width: 12px;
+  height: 12px;
+  transition: width 0.1s ease-out, height 0.1s ease-out;
+}
 .cursorLabelClick {
   width: 57px;
   transition: width 0.4s ease-out;
@@ -68,6 +73,8 @@ body, html {
 .cursorLabelClick::after {
   content: "click";
 }
+
+/* КУРСОР КЛИК & МУВ */
 .cursorLabelClickAndMove {
   width: 123px;
   transition: width 0.4s ease-out;
@@ -77,6 +84,8 @@ body, html {
   content: "move & click";
   white-space: nowrap;
 }
+
+/* КУРСОР КЛИК & ДРАГ */
 .cursorLabelDragAndClick {
   width: 115px;
   transition: width 0.4s ease-out;
@@ -87,20 +96,31 @@ body, html {
   white-space: nowrap;
 }
 
+/* КУРСОР РИСОВАЛКА */
+.cursorDraw {
+  width: 8px;
+  height: 8px;
+  transition: width 0.1s ease-out, height 0.1s ease-out;
+}
+
+
+/* ЛОГО */
 .logoBorder {
   position: relative;
   width: 80px;
   height: 58px;
   left: 20px;
   top: 20px;
-  background-color: #FFFFFF;
   border-radius: 4px;
   z-index: 98;
 }
-.logoBorder:hover {
+.logoBorderHover {
+  background-color: #FFFFFF;
+}
+.logoBorderHover:hover {
   background-color: #FFED46;
 }
-.logoBorder:hover .logo {
+.logoBorderHover:hover .logo {
   fill: #FD4E2B;
 }
 .logo {
@@ -110,4 +130,80 @@ body, html {
   transform: translateX(-50%) translateY(-50%);
   fill: black;
   z-index: 99;
+}
+.logoClick {
+  fill: #FD4E2B;
+}
+
+
+/* ПЕРС */
+.persMoveArea{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.pers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.persBody {
+  fill: #FD4E2B;
+}
+.persBody:hover {
+  fill: #FFED46;
+}
+.eye1 {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  height: 207px;
+  width: 207px;
+  background: white;
+  top: 145px;
+  left: 0px;
+}
+.eye1::after {
+  position: absolute;
+  bottom: 22px;
+  right: 60px;
+  width: 80px;
+  height: 80px;
+  background: black;
+  border-radius: 50%;
+  content: " ";
+  transition: all 0.1s ease-out;
+}
+.eye2 {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  height: 207px;
+  width: 207px;
+  background: white;
+  top: 0px;
+  left: 693px;
+}
+.eye2::after {
+  position: absolute;
+  bottom: 22px;
+  right: 60px;
+  width: 80px;
+  height: 80px;
+  background: black;
+  border-radius: 50%;
+  content: " ";
+  transition: all 0.1s ease-out;
+}
+.bigEyes::after {
+  bottom: 18px;
+  right: 45px;
+  width: 110px;
+  height: 110px;
+  transition: all 0.1s ease-out;
+}
+.orangeBack {
+  background-color: #FD4E2B;
 }
