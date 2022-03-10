@@ -76,12 +76,10 @@ body, html {
   width: 115px;
   transition: width 0.4s ease-out;
   overflow: hidden;
-  display: block;
 }
 .cursorLabelDragAndClick::after {
   content: "drag & click";
   white-space: nowrap;
-    display: block;
 }
 
 .logoBorder {
