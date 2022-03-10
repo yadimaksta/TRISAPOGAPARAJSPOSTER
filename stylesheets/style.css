@@ -35,6 +35,11 @@ body, html {
   height: 12px;
   transition: width 0.1s ease-out, height 0.1s ease-out;
 }
+.cursorDraw {
+  width: 8px;
+  height: 8px;
+  transition: width 0.1s ease-out, height 0.1s ease-out;
+}
 .cursorLabel {
   width: 65px;
   height: 34px;
