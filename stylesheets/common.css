@@ -10,6 +10,7 @@ body, html {
 
 /* СТИЛИЗАЦИЯ КУРСОРА */
 .cursor {
+  opacity: 0%;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -20,9 +21,10 @@ body, html {
   z-index: 10000;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: width 0.1s ease-out, height 0.1s ease-out;
+  transition: width 0.1s ease-out, height 0.1s ease-out, opacity 0.1s;
 }
 .cursorLabel {
+  opacity: 0%;
   width: 65px;
   height: 27px;
   border-radius: 17px;
@@ -38,7 +40,7 @@ body, html {
   padding-top: 7px;
   transform: translate(9px, -43px);
   pointer-events: none;
-  transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out, opacity 0.1s;
 }
 .cursorLabel::after {
   content: "move";
@@ -94,6 +96,13 @@ body, html {
   height: 8px;
   transition: width 0.1s ease-out, height 0.1s ease-out;
 }
+.cursorLabelDraw {
+  width: 60px;
+  transition: width 0.4s ease-out;
+}
+.cursorLabelDraw::after {
+  content: "draw";
+}
 
 /* КНОПКИ */
 .bottomButtons {
@@ -134,29 +143,48 @@ body, html {
   fill: #FD4E2B;
 } */
 
-/* КНОПКА ПОДСКАЗКА */
-.hintButton {
+/* КНОПКИ */
+.hintButton, .clearButton {
   background-color: #FD4E2B;
   position: relative;
   width: 34px;
   height: 34px;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-left: 6px;
 }
-.hintButton:hover {
+.colorButton01, .colorButton02, .colorButton03 {
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+.colorButton01 {
+  margin-left: 6px;
+  background-color: #FD4E2B;
+  border-radius: 8px 0px 0px 8px;
+}
+.colorButton02 {
+  background-color: #420CDB;
+}
+.colorButton03 {
+  background-color: black;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.hintButton:hover, .clearButton:hover {
   background-color: #FFED46;
 }
-.hintButton:active {
+.hintButton:active, .clearButton:active {
   background-color: #FFF173;
 }
-.hintButton:hover .hintIcon {
-  fill: #FD4E2B;
-}
-.hintIcon {
+.hintIcon, .clearIcon {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   fill: white;
   z-index: 9999;
+}
+
+.hintButton:hover .hintIcon, .clearButton:hover .clearIcon {
+  fill: #FD4E2B;
 }
