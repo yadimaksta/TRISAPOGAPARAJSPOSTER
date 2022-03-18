@@ -1,8 +1,16 @@
-// ПОЗИЦИОНИРОВАНИЕ КУРСОРА
+// ПОЗИЦИОНИРОВАНИЕ КУРСОРА + ПОЯВЛЕНИЕ
 $(document).mousemove(function(e){
-  $(".cursor").css({left: e.clientX, top: e.clientY})
+  $(".cursor").css({
+    left: e.clientX,
+    top: e.clientY,
+    opacity: "100%",
+  })
   setTimeout(function(){
-    $(".cursorLabel").css({left: e.clientX, top: e.clientY})
+    $(".cursorLabel").css({
+      left: e.clientX,
+      top: e.clientY,
+      opacity: "100%",
+    })
   }, 20)
 })
 
@@ -22,7 +30,23 @@ $(document).ready(function(){
   });
 });
 
-// // ЛОГО ПРЕСС
+// РИСОВАЛКА
+$(document).ready(function(){
+  $("#draw").hover(function(){
+    $(".cursorLabel").addClass("cursorLabelDraw");
+  },function(){
+    $(".cursorLabel").removeClass("cursorLabelDraw");
+  });
+});
+$(document).ready(function(){
+  $("#draw").hover(function(){
+    $(".cursor").addClass("cursorDraw");
+  },function(){
+    $(".cursor").removeClass("cursorDraw");
+  });
+});
+
+// ЛОГО ПРЕСС
 // $(document).ready(function(){
 //   $(".logoBorder").mousedown(function(){
 //     $(this).removeClass("logoBorderHover");
@@ -52,7 +76,7 @@ $(document).ready(function(){
   });
 });
 
-// ДРАГ
+// ДРАГ НАВЕДЕНИЕ
 $(document).ready(function(){
   $(".shapesPath").hover(function(){
     $(".cursorLabel").addClass("cursorLabelDragAndClick");
