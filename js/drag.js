@@ -8,9 +8,18 @@ $(function(){
   $("#draggable6").draggable();
 });
 
+// ПОДСКАЗКА
+$(function(){
+  $(".hintButton").mousedown(function(){
+    $(".shapeHint").css("opacity","100%");
+  });
+  $(".hintButton").mouseup(function(){
+    $(".shapeHint").css("opacity","0%");
+  });
+});
 
 // ПРЕСС
-$(document).ready(function(){
+$(function(){
   $(".shapesPath").mousedown(function(){
     $(this).removeClass("shapesPath");
     $(this).addClass("objectColorClick");
@@ -21,10 +30,63 @@ $(document).ready(function(){
   });
 });
 
+// ПРЕСС Z-INDEX
+$(function () {
+  let z = 1;
+  $('.shapes').mousedown(function () {
+    z += 1;
+    $(this).css("z-index",z);
+  });
+});
+
+// АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ ПОСЛЕ ЗАГРУЗКИ
+$(function () {
+  $('.r1').mousedown(function () {
+    $(this).css("position","relative");
+  });
+  $('.r1').mouseup(function () {
+    $(this).css("position","absolute");
+  });
+
+  $('.r2').mousedown(function () {
+    $(this).css("position","relative");
+  });
+  $('.r2').mouseup(function () {
+    $(this).css("position","absolute");
+  });
+
+  $('.r3').mousedown(function () {
+    $(this).css("position","relative");
+  });
+  $('.r3').mouseup(function () {
+    $(this).css("position","absolute");
+  });
+
+  $('.r4').mousedown(function () {
+    $(this).css("position","relative");
+  });
+  $('.r4').mouseup(function () {
+    $(this).css("position","absolute");
+  });
+
+  $('.r5').mousedown(function () {
+    $(this).css("position","relative");
+  });
+  $('.r5').mouseup(function () {
+    $(this).css("position","absolute");
+  });
+
+  $('.r6').mousedown(function () {
+    $(this).css("position","relative");
+  });
+  $('.r6').mouseup(function () {
+    $(this).css("position","absolute");
+  });
+});
 
 // ВРАЩЕНИЕ 1
 $(function () {
-  let rot = -62;
+  let rot = 58;
   $('.r1').click(function () {
     rot += 30;
     $(this).css({
@@ -38,7 +100,7 @@ $(function () {
 
 // ВРАЩЕНИЕ 2
 $(function () {
-  let rot = -118;
+  let rot = 302;
   $('.r2').click(function () {
     rot += 30;
     $(this).css({
@@ -52,7 +114,7 @@ $(function () {
 
 // ВРАЩЕНИЕ 3
 $(function () {
-  let rot = -122;
+  let rot = 118;
   $('.r3').click(function () {
     rot += 30;
     $(this).css({
