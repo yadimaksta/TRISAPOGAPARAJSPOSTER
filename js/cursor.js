@@ -6,37 +6,35 @@ $(document).mousemove(function(e){
   }, 20)
 })
 
-
-// ЛОГО КЛИК
+// КЛИК
 $(document).ready(function(){
-  $(".logoBorder").hover(function(){
+  $(".CLICKELEMENTS").hover(function(){
     $(".cursorLabel").addClass("cursorLabelClick");
   },function(){
     $(".cursorLabel").removeClass("cursorLabelClick");
   });
 });
 $(document).ready(function(){
-  $(".logoBorder").hover(function(){
+  $(".CLICKELEMENTS").hover(function(){
     $(".cursor").addClass("cursorClick");
   },function(){
     $(".cursor").removeClass("cursorClick");
   });
 });
 
-// ЛОГО ПРЕСС
-$(document).ready(function(){
-  $(".logoBorder").mousedown(function(){
-    $(this).removeClass("logoBorderHover");
-    $(this).addClass("objectColorClickBGCOLOR");
-    $(".logo").addClass("logoClick");
-  });
-  $(".logoBorder").mouseup(function(){
-    $(this).addClass("logoBorderHover");
-    $(this).removeClass("objectColorClickBGCOLOR");
-    $(".logo").removeClass("logoClick");
-  });
-});
-
+// // ЛОГО ПРЕСС
+// $(document).ready(function(){
+//   $(".logoBorder").mousedown(function(){
+//     $(this).removeClass("logoBorderHover");
+//     $(this).addClass("objectColorClickBGCOLOR");
+//     $(".logo").addClass("logoClick");
+//   });
+//   $(".logoBorder").mouseup(function(){
+//     $(this).addClass("logoBorderHover");
+//     $(this).removeClass("objectColorClickBGCOLOR");
+//     $(".logo").removeClass("logoClick");
+//   });
+// });
 
 // ПЕРС
 $(document).ready(function(){
@@ -53,7 +51,6 @@ $(document).ready(function(){
     $(".cursor").removeClass("cursorClick");
   });
 });
-
 
 // ДРАГ
 $(document).ready(function(){
