@@ -119,7 +119,7 @@ body, html {
   position: relative;
   width: 202px;
   height: 34px;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: #FD4E2B;
 }
 .logoBorder:active {
