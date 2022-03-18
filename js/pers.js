@@ -30,7 +30,6 @@ $(document).ready(function(){
   });
 })
 
-
 // НАВЕДЕНИЕ → ОРАНЖЕВЫЙ ФОН
 $(document).ready(function(){
   $(".persBody").hover(function(){
@@ -40,7 +39,6 @@ $(document).ready(function(){
   });
 });
 
-
 // КЛИК → БОЛЬШИЕ ЗРАЧКИ
 $(document).ready(function(){
   $(".persBody").click(function(){
@@ -48,7 +46,6 @@ $(document).ready(function(){
     $(".eye2").toggleClass("bigEyes");
   });
 });
-
 
 // ПРЕСС
 $(document).ready(function(){
