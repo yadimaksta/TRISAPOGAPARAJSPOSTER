@@ -1,0 +1,15 @@
+body {
+  background-color: white;
+}
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+}
+.top-bar * {
+  margin: 5px 5px;
+}
+#draw {
+  display: block;
+}
