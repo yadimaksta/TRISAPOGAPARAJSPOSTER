@@ -152,24 +152,6 @@ body, html {
   border-radius: 8px;
   margin-left: 6px;
 }
-.colorButton01, .colorButton02, .colorButton03 {
-  position: relative;
-  width: 34px;
-  height: 34px;
-}
-.colorButton01 {
-  margin-left: 6px;
-  background-color: #FD4E2B;
-  border-radius: 8px 0px 0px 8px;
-}
-.colorButton02 {
-  background-color: #420CDB;
-}
-.colorButton03 {
-  background-color: black;
-  border-radius: 0px 8px 8px 0px;
-}
-
 .hintButton:hover, .clearButton:hover {
   background-color: #FFED46;
 }
@@ -184,7 +166,6 @@ body, html {
   fill: white;
   z-index: 9999;
 }
-
 .hintButton:hover .hintIcon, .clearButton:hover .clearIcon {
   fill: #FD4E2B;
 }
