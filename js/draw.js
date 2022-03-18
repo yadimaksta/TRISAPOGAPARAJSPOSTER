@@ -37,7 +37,7 @@ let
     x: 0,
     y: 0,
     color: '#FD4E2B',
-    size: 8,
+    size: 5,
     down: false,
   },
   strokes = [],
