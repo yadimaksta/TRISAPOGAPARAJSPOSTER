@@ -1,6 +1,34 @@
+// КУРСОР КНОПКИ
+$(document).ready(function(){
+  $(".colorButton").hover(function(){
+    $(".cursorLabel").addClass("cursorLabelClick");
+  },function(){
+    $(".cursorLabel").removeClass("cursorLabelClick");
+  });
+});
+$(document).ready(function(){
+  $(".colorButton").hover(function(){
+    $(".cursor").addClass("cursorClick");
+  },function(){
+    $(".cursor").removeClass("cursorClick");
+  });
+});
 
-
-
+// КУРСОР КНОПКИ → СМЕНА ЦВЕТА КУРСОРА
+$(document).ready(function(){
+  $(".cb01").click(function(){
+    $(".cursor").css("background-color","#FD4E2B");
+    $(".cursorLabel").css("background-color","#FD4E2B");
+  });
+  $(".cb02").click(function(){
+    $(".cursor").css("background-color","#420CDB");
+    $(".cursorLabel").css("background-color","#420CDB");
+  });
+  $(".cb03").click(function(){
+    $(".cursor").css("background-color","black");
+    $(".cursorLabel").css("background-color","black");
+  });
+});
 
 // РИСОВАЛКА
 let
@@ -67,8 +95,14 @@ function init () {
     strokes = [];
     redraw();
   });
-  $('#color-picker').on('input', function () {
-      brush.color = this.value;
+  $('.cb01').click(function () {
+    brush.color = "#FD4E2B";
+  });
+  $('.cb02').click(function () {
+    brush.color = "#420CDB";
+  });
+  $('.cb03').click(function () {
+    brush.color = "black";
   });
 }
 $(init);
