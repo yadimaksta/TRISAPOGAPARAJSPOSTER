@@ -3,6 +3,11 @@ body {
 }
 #draw {
   display: block;
+  background-image: url('../images/drawBack1920.svg');
+  object-position: center center;
+}
+.drawBack {
+  position: absolute;
 }
 
 /* КНОПКИ ЦВЕТ */
@@ -18,7 +23,7 @@ body {
 }
 .colorButton:active {
   opacity: 80%;
-  width: 52px;
+  width: 56px;
   transition: width 0.1s ease-in-out;
 }
 .cb01 {
