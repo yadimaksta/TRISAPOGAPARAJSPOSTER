@@ -64,8 +64,16 @@ body, html {
   width: 57px;
   transition: width 0.4s ease-out;
 }
+.cursorLabelClickDis {
+  width: 57px;
+  transition: width 0.4s ease-out;
+}
 .cursorLabelClick::after {
   content: "click";
+}
+.cursorLabelClickDis::after {
+  content: "click";
+  opacity: 60%;
 }
 
 /* КУРСОР КЛИК & МУВ */
