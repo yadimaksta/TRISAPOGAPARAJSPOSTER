@@ -10,6 +10,8 @@ body {
 }
 .shapesCont {
   position: absolute;
+  opacity: 0;
+  transition: 0.15s 0.2s;
 }
 .shapeHint {
   position: absolute;
