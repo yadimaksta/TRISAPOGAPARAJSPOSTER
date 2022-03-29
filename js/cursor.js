@@ -30,6 +30,21 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $(".CLICKELEMENTSDISABLE").hover(function(){
+    $(".cursorLabel").addClass("cursorLabelClickDis");
+  },function(){
+    $(".cursorLabel").removeClass("cursorLabelClickDis");
+  });
+});
+$(document).ready(function(){
+  $(".CLICKELEMENTSDISABLE").hover(function(){
+    $(".cursor").addClass("cursorClicks");
+  },function(){
+    $(".cursor").removeClass("cursorClick");
+  });
+});
+
 // РИСОВАЛКА
 $(document).ready(function(){
   $("#draw").hover(function(){
@@ -86,6 +101,22 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $(".shapesPath").hover(function(){
+    $(".cursor").addClass("cursorClick");
+  },function(){
+    $(".cursor").removeClass("cursorClick");
+  });
+});
+
+// ГРЯЗЬ НАВЕДЕНИЕ
+$(document).ready(function(){
+  $(".dirt").hover(function(){
+    $(".cursorLabel").addClass("cursorLabelClick");
+  },function(){
+    $(".cursorLabel").removeClass("cursorLabelClick");
+  });
+});
+$(document).ready(function(){
+  $(".dirt").hover(function(){
     $(".cursor").addClass("cursorClick");
   },function(){
     $(".cursor").removeClass("cursorClick");
