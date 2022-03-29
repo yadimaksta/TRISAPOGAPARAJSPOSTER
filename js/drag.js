@@ -1,3 +1,10 @@
+// ПОЯВЛЕНИЕ
+$(document).ready(function(){
+  $(".shapesCont").css({
+    'opacity': '100%',
+  });
+});
+
 // JQUERY UI DRAGGABLE
 $(function(){
   $("#draggable1").draggable();
