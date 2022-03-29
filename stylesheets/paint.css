@@ -5,6 +5,8 @@ body {
   display: block;
   background-image: url('../images/drawBack1920.svg');
   object-position: center center;
+  opacity: 0;
+  transition: 0.15s 0.2s;
 }
 .drawBack {
   position: absolute;
@@ -22,7 +24,6 @@ body {
   transition: width 0.2s ease-in-out;
 }
 .colorButton:active {
-  opacity: 80%;
   width: 56px;
   transition: width 0.1s ease-in-out;
 }
