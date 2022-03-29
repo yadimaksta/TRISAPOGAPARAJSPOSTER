@@ -1,3 +1,10 @@
+// ПОЯВЛЕНИЕ
+$(document).ready(function(){
+  $("#draw").css({
+    'opacity': '100%',
+  });
+});
+
 // КУРСОР КНОПКИ
 $(document).ready(function(){
   $(".colorButton").hover(function(){
@@ -16,15 +23,15 @@ $(document).ready(function(){
 
 // КУРСОР КНОПКИ → СМЕНА ЦВЕТА КУРСОРА
 $(document).ready(function(){
-  $(".cb01").click(function(){
+  $(".cb01").mousedown(function(){
     $(".cursor").css("background-color","#FD4E2B");
     $(".cursorLabel").css("background-color","#FD4E2B");
   });
-  $(".cb02").click(function(){
+  $(".cb02").mousedown(function(){
     $(".cursor").css("background-color","#420CDB");
     $(".cursorLabel").css("background-color","#420CDB");
   });
-  $(".cb03").click(function(){
+  $(".cb03").mousedown(function(){
     $(".cursor").css("background-color","black");
     $(".cursorLabel").css("background-color","black");
   });
