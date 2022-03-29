@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+
+/* ГРЯЗЬ */
+.dirt {
+  position: absolute;
+  fill: #FD4E2B;
+  transition: opacity 0.08s ease-out 4s;
+}
+.dirt:active {
+  transition: 0s;
+  opacity: 0;
+}
+.dirt:hover {
+  fill: #FFED46;
+}
+
+/* СВГ */
+.dirtSVG {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translateX(-50%) translateY(-51%);
+}
