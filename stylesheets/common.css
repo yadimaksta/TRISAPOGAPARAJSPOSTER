@@ -3,6 +3,8 @@ body, html {
   background-color: black;
   width: 100vw;
   height: 100vh;
+  display: block;
+  position: relative;
 }
 * {
   cursor: none;
@@ -147,9 +149,6 @@ body, html {
   fill: white;
   z-index: 9999;
 }
-/* .logoClick {
-  fill: #FD4E2B;
-} */
 
 /* КНОПКИ */
 .hintButton, .clearButton {
