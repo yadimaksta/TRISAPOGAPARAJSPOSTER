@@ -14,12 +14,20 @@ $(document).ready(function(){
       'transform': 'scale(0.5) translateX(-100%) translateY(-105%)',
       'transition': 'transform 0.4s ease-in-out'
     });
+    $("body").addClass("orangeBack");
+    $(".dragPreviewItems").addClass("yellowFill");
+    $(".drawPreviewItem").addClass("yellowFill");
+    $(".dirtPreviewItem").addClass("yellowFill");
   });
   $(".logoBorder").mouseleave(function(){
     $(".canvas").css({
       'transform': 'scale(1)',
       'transition': 'transform 2s ease-out'
     });
+    $("body").removeClass("orangeBack");
+    $(".dragPreviewItems").removeClass("yellowFill");
+    $(".drawPreviewItem").removeClass("yellowFill");
+    $(".dirtPreviewItem").removeClass("yellowFill");
   });
 });
 
