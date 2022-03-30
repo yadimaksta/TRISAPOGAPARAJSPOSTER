@@ -25,3 +25,34 @@ body {
   opacity: 0;
   transition: 0.1s 0.2s;
 }
+/*
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  .dirtSVG {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translateX(-50%) translateY(-51%);
+    opacity: 0;
+    transition: 0.1s 0.2s;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+
+} */
