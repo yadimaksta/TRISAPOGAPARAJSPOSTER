@@ -36,7 +36,17 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".imgMainPage").hover(function(){
     $("body").addClass("orangeBack");
+    $(".labelsMainPage").css("opacity","100");
   },function(){
     $("body").removeClass("orangeBack");
+    $(".labelsMainPage").css("opacity","0");
+  });
+});
+
+$(document).ready(function(){
+  $(".dragPreview").hover(function(){
+    $(".labelsMainPage").addClass("labelsMainPageDrag");
+  },function(){
+    $(".labelsMainPage").removeClass("labelsMainPageDrag");
   });
 });
