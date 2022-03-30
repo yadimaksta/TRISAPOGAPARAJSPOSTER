@@ -6,7 +6,7 @@ body {
 .dirt {
   position: absolute;
   fill: #FD4E2B;
-  transition: opacity 0.08s ease-out 4s;
+  transition: opacity 0.05s ease-out 4s;
 }
 .dirt:active {
   transition: 0s;
@@ -22,4 +22,6 @@ body {
   top: 48%;
   left: 48%;
   transform: translateX(-50%) translateY(-51%);
+  opacity: 0;
+  transition: 0.1s 0.2s;
 }
