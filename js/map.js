@@ -31,3 +31,12 @@ $(document).ready(function(){
     });
   });
 });
+
+// НАВЕДЕНИЕ → ОРАНЖЕВЫЙ ФОН + ПОЯВЛЕНИЕ НАДПИСИ
+$(document).ready(function(){
+  $(".imgMainPage").hover(function(){
+    $("body").addClass("orangeBack");
+  },function(){
+    $("body").removeClass("orangeBack");
+  });
+});
