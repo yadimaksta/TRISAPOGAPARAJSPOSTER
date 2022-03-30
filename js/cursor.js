@@ -61,20 +61,6 @@ $(document).ready(function(){
   });
 });
 
-// ЛОГО ПРЕСС
-// $(document).ready(function(){
-//   $(".logoBorder").mousedown(function(){
-//     $(this).removeClass("logoBorderHover");
-//     $(this).addClass("objectColorClickBGCOLOR");
-//     $(".logo").addClass("logoClick");
-//   });
-//   $(".logoBorder").mouseup(function(){
-//     $(this).addClass("logoBorderHover");
-//     $(this).removeClass("objectColorClickBGCOLOR");
-//     $(".logo").removeClass("logoClick");
-//   });
-// });
-
 // ПЕРС
 $(document).ready(function(){
   $(".persBody").hover(function(){
