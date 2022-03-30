@@ -52,9 +52,9 @@
 /* DRAG PREVIEW */
 .dragPreview {
   position: absolute;
-  top: 20px;
+  top: -20px;
   left: 20px;
-  transform: scale(1.5);
+  transform: scale(1.6);
 }
 .dragPreview:hover .dragPreviewItems {
   fill: #FFED46;
@@ -221,4 +221,7 @@
 
 .ZEROOPACITY {
   opacity: 0;
+}
+.yellowFill {
+  fill: #FFED46;
 }
