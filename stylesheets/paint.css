@@ -6,7 +6,7 @@ body {
   background-image: url('../images/drawBack1920.svg');
   object-position: center center;
   opacity: 0;
-  transition: 0.15s 0.2s;
+  transition: 0.1s 0.2s;
 }
 .drawBack {
   position: absolute;
