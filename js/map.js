@@ -1,26 +1,17 @@
-// ПОЯВЛЕНИЕ
-$(document).ready(function(){
-  $(".container").mousemove(function(){
-    $(".container").css({
-      'opacity': '100%',
-    });
-  });
-});
-
-// ПЕРЕМЕЩЕНИЕ ВЬЮПОРТА
+// ПЕРЕМЕЩЕНИЕ КАНВАС
 let container = document.querySelector('.container');
 let canvas = document.querySelector('.canvas');
 container.addEventListener('mousemove', (e) => {
   let x = e.clientX - container.getBoundingClientRect().left;
   let y = e.clientY - container.getBoundingClientRect().top;
-  canvas.style.transform = `translate(-${x*1}px, -${y*1}px)`;
+  canvas.style.transform = `translate(-${x}px, -${y*1.5}px)`;
 })
 
 // НАВЕДЕНИЕ НА ЛОГОТИП НА ГЛАВНОМ ЭКРАНЕ
 $(document).ready(function(){
   $(".logoBorder").mouseenter(function(){
     $(".canvas").css({
-      'transform': 'scale(0.5) translateX(-100%) translateY(-100%)',
+      'transform': 'scale(0.5) translateX(-100%) translateY(-105%)',
       'transition': 'transform 0.4s ease-in-out'
     });
   });
@@ -32,7 +23,7 @@ $(document).ready(function(){
   });
 });
 
-// НАВЕДЕНИЕ → ОРАНЖЕВЫЙ ФОН + ПОЯВЛЕНИЕ НАДПИСИ
+// НАВЕДЕНИЕ → ОРАНЖЕВЫЙ ФОН + ПОЯВЛЕНИЕ ЗАГОЛОВКА + СКРЫТИЕ ОСТАЛЬНЫХ ЭЛЕМЕНТОВ
 $(document).ready(function(){
   $(".imgMainPage").hover(function(){
     $("body").addClass("orangeBack");
@@ -42,11 +33,34 @@ $(document).ready(function(){
     $(".labelsMainPage").css("opacity","0");
   });
 });
-
 $(document).ready(function(){
   $(".dragPreview").hover(function(){
     $(".labelsMainPage").addClass("labelsMainPageDrag");
+    $(".dirtPreview").addClass("ZEROOPACITY");
+    $(".drawPreview").addClass("ZEROOPACITY");
   },function(){
     $(".labelsMainPage").removeClass("labelsMainPageDrag");
+    $(".dirtPreview").removeClass("ZEROOPACITY");
+    $(".drawPreview").removeClass("ZEROOPACITY");
+  });
+});
+$(document).ready(function(){
+  $(".dirtPreview").hover(function(){
+    $(".labelsMainPage").addClass("labelsMainPageDirt");
+    $(".dragPreview").addClass("ZEROOPACITY");
+    $(".drawPreview").addClass("ZEROOPACITY");
+  },function(){
+    $(".labelsMainPage").removeClass("labelsMainPageDirt");
+    $(".dragPreview").removeClass("ZEROOPACITY");
+    $(".drawPreview").removeClass("ZEROOPACITY");
+  });
+});
+$(document).ready(function(){
+  $(".drawPreview").hover(function(){
+    $(".dirtPreview").addClass("ZEROOPACITY");
+    $(".dragPreview").addClass("ZEROOPACITY");
+  },function(){
+    $(".dirtPreview").removeClass("ZEROOPACITY");
+    $(".dragPreview").removeClass("ZEROOPACITY");
   });
 });
