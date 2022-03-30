@@ -1,7 +1,7 @@
 // ПОЯВЛЕНИЕ
 $(document).ready(function(){
-  $(".container").mouseenter(function(){
-    $(this).css({
+  $(".container").mousemove(function(){
+    $(".container").css({
       'opacity': '100%',
     });
   });
