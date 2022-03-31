@@ -1,6 +1,132 @@
 /* COMMON */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
-  .cursor, .cursorLabel {
+/* COMMON */
+/* COMMON */
+@media only screen and (max-device-width: 1023px) {
+  .cursor, .cursorLabel, .cursorLabelClickDis {
     display: none;
+  }
+}
+
+
+
+
+
+/* MAP */
+/* MAP */
+/* MAP */
+@media only screen and (min-width: 2560px) {
+  .previewsMainPage {
+    transform: scale(1.2);
+    margin-left: 310px;
+    margin-top: -200px;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  .previewsMainPage {
+    transform: scale(0.8);
+    margin-left: -223px;
+    margin-top: 118px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  .previewsMainPage {
+    transform: scale(0.8);
+    margin-left: -238px;
+    margin-top: 84px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+
+}
+@media only screen and (max-width: 359px) {
+
+}
+
+
+
+/* PERS */
+/* PERS */
+/* PERS */
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  .pers {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  .pers {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .pers {
+    transform: translateX(-50%) translateY(-50%) scale(0.7);
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .pers {
+    transform: translateX(-50%) translateY(-50%) scale(0.4);
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+  .pers {
+    transform: translateX(-50%) translateY(-50%) scale(0.35);
+  }
+}
+@media only screen and (max-width: 359px) {
+  .pers {
+    transform: translateX(-50%) translateY(-50%) scale(0.3);
+  }
+}
+
+
+
+
+
+/* PAINT */
+/* PAINT */
+/* PAINT */
+@media only screen and (min-width: 2560px) {
+  #draw {
+    background-image: url('../images/drawBack2560.svg');
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  #draw {
+    background-image: url('../images/drawBack1440.svg');
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  #draw {
+    background-image: url('../images/drawBack1366.svg');
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  #draw {
+    background-image: url('../images/drawBack1024.svg');
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #draw {
+    background-image: url('../images/drawBack768.svg');
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  #draw {
+    background-image: url('../images/drawBack414.svg');
+  }
+}
+@media only screen and (max-width: 413px) {
+  #draw {
+    background-image: url('../images/drawBack360.svg');
   }
 }
