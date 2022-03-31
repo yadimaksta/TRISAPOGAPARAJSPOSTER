@@ -8,6 +8,13 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/cursor.js"></script>
+    <style media="screen">
+      @media only screen and (max-width: 1365px) {
+        html, body {
+          overflow-y: scroll;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="cursor"></div>
@@ -29,7 +36,7 @@
     <!-- ЗАГОЛОВКИ -->
     <div class="labelsMainPage"></div>
 
-    <!-- MAIN -->
+    <!-- DESKTOP -->
     <div class="container">
       <div class="canvas">
         <div class="previewsMainPage">
@@ -88,6 +95,26 @@
           <div class="blackHole blackHole03 CLICKELEMENTS" onclick="window.location.replace('pers.html')"></div>
         </div>
       </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="containerMainPageMobile">
+      <div class="buttonsMainPageMobile bm1" onclick="window.location.replace('drag.html')">
+        <div class="labelsMainPageMobile">
+          connect the<br>shoe parts
+        </div>
+      </div>
+      <div class="buttonsMainPageMobile bm2" onclick="window.location.replace('paint.html')">
+        <div class="labelsMainPageMobile">
+          draw your<br>print
+        </div>
+      </div>
+      <div class="buttonsMainPageMobile bm3" onclick="window.location.replace('dirt.html')">
+        <div class="labelsMainPageMobile">
+          remove<br>the dirt
+        </div>
+      </div>
+      <div class="blackHoleMobile" onclick="window.location.replace('pers.html')"></div>
     </div>
 
     <!-- СКРИПТ -->
