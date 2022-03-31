@@ -1,5 +1,4 @@
 // ПЕРЕМЕЩЕНИЕ МАКЕТА ОТНОСИТЕЛЬНО МЫШИ
-if(window.innerWidth > 1365) {
   let container = document.querySelector('.container');
   let canvas = document.querySelector('.canvas');
   container.addEventListener('mousemove', (e) => {
@@ -7,9 +6,8 @@ if(window.innerWidth > 1365) {
     let y = e.clientY - container.getBoundingClientRect().top;
     canvas.style.transform = `translate(-${x}px, -${y*1.5}px)`;
   })
-}
+
 // НАВЕДЕНИЕ НА ЛОГОТИП НА ГЛАВНОМ ЭКРАНЕ
-if(window.innerWidth > 1365) {
   $(document).ready(function(){
     $(".logoBorder").mouseenter(function(){
       $(".canvas").css({
@@ -34,10 +32,8 @@ if(window.innerWidth > 1365) {
       $(".blackHole").removeClass("whiteBack");
     });
   });
-}
 
 // НАВЕДЕНИЕ НА ФИГУРУ → ОРАНЖЕВЫЙ ФОН + ПОЯВЛЕНИЕ ЗАГОЛОВКА + СКРЫТИЕ ОСТАЛЬНЫХ ФИГУР
-if(window.innerWidth > 1365) {
   $(document).ready(function(){
     $(".imgMainPage").hover(function(){
       $("body").addClass("orangeBack");
@@ -108,4 +104,3 @@ if(window.innerWidth > 1365) {
       $(".dragPreview").removeClass("ZEROOPACITY");
     });
   });
-}
