@@ -1,9 +1,12 @@
 /* COMMON */
 /* COMMON */
 /* COMMON */
-@media only screen and (max-device-width: 1023px) {
+@media only screen and (max-width: 1365px) {
   .cursor, .cursorLabel, .cursorLabelClickDis {
     display: none;
+  }
+  * {
+    cursor: auto;
   }
 }
 
@@ -14,6 +17,11 @@
 /* MAP */
 /* MAP */
 /* MAP */
+@media only screen and (min-width: 1366px) {
+  .containerMainPageMobile {
+    display: none;
+  }
+}
 @media only screen and (min-width: 2560px) {
   .previewsMainPage {
     transform: scale(1.2);
@@ -29,7 +37,6 @@
 
   }
 }
-
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
   .previewsMainPage {
     transform: scale(0.8);
@@ -37,21 +44,176 @@
     margin-top: 84px;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
-
+@media only screen and (max-width: 1365px) {
+  .container {
+    display: none;
+  }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+  .bottomButtons {
+    position: fixed;
+  }
+  .containerMainPageMobile {
+    /* position: relative; */
+    margin: 20px auto;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonsMainPageMobile {
+    position: relative;
+    background-color: #FD4E2B;
+    border-radius: 8px;
+    width: 100%;
+    height: 400px;
+    font-family: Helvetica;
+    color: white;
+    font-size: 84px;
+    line-height: 80%;
+  }
+  .buttonsMainPageMobile:active {
+    background-color: #FFED46;
+  }
+  .labelsMainPageMobile {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 26px;
+  }
+  .bm2, .bm3 {
+    margin-top: 16px;
+  }
+  .bm1 {
+    background-image: url("../images/bm1-1.svg");
+  }
+  .bm2 {
+    background-image: url("../images/bm1-2.svg");
+  }
+  .bm3 {
+    background-image: url("../images/bm1-3.svg");
+  }
+  .blackHoleMobile {
+    margin: 26px auto;
+    width: 566px;
+    height: 566px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .blackHoleMobile:active {
+    background-color: #FFED46;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
 @media only screen and (min-width: 414px) and (max-width: 767px) {
-
+  .bottomButtons {
+    position: fixed;
+  }
+  .containerMainPageMobile {
+    /* position: relative; */
+    margin: 12px auto;
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonsMainPageMobile {
+    position: relative;
+    background-color: #FD4E2B;
+    border-radius: 8px;
+    width: 100%;
+    height: 390px;
+    font-family: Helvetica;
+    color: white;
+    font-size: 64px;
+    line-height: 80%;
+  }
+  .buttonsMainPageMobile:active {
+    background-color: #FFED46;
+  }
+  .labelsMainPageMobile {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .bm2, .bm3 {
+    margin-top: 10px;
+  }
+  .bm1 {
+    background-image: url("../images/bm2-1.svg");
+  }
+  .bm2 {
+    background-image: url("../images/bm2-2.svg");
+  }
+  .bm3 {
+    background-image: url("../images/bm2-3.svg");
+  }
+  .blackHoleMobile {
+    margin: 20px auto;
+    width: 340px;
+    height: 340px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .blackHoleMobile:active {
+    background-color: #FFED46;
+  }
 }
-@media only screen and (min-width: 360px) and (max-width: 413px) {
-
+@media only screen and (max-width: 413px) {
+  .bottomButtons {
+    position: fixed;
+  }
+  .containerMainPageMobile {
+    /* position: relative; */
+    margin: 12px auto;
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonsMainPageMobile {
+    position: relative;
+    background-color: #FD4E2B;
+    border-radius: 8px;
+    width: 100%;
+    height: 336px;
+    font-family: Helvetica;
+    color: white;
+    font-size: 56px;
+    line-height: 80%;
+  }
+  .buttonsMainPageMobile:active {
+    background-color: #FFED46;
+  }
+  .labelsMainPageMobile {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 18px;
+  }
+  .bm2, .bm3 {
+    margin-top: 10px;
+  }
+  .bm1 {
+    background-image: url("../images/bm2-1.svg");
+  }
+  .bm2 {
+    background-image: url("../images/bm2-2.svg");
+  }
+  .bm3 {
+    background-image: url("../images/bm2-3.svg");
+  }
+  .blackHoleMobile {
+    margin: 20px auto;
+    width: 340px;
+    height: 340px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .blackHoleMobile:active {
+    background-color: #FFED46;
+  }
 }
-@media only screen and (max-width: 359px) {
 
-}
 
 
 
