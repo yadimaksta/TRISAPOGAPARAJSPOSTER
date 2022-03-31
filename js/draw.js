@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 });
 
-// КУРСОР КНОПКИ
+// КУРСОР — КНОПКИ
 $(document).ready(function(){
   $(".colorButton").hover(function(){
     $(".cursorLabel").addClass("cursorLabelClick");
@@ -21,7 +21,7 @@ $(document).ready(function(){
   });
 });
 
-// КУРСОР КНОПКИ → СМЕНА ЦВЕТА КУРСОРА
+// КУРСОР — КНОПКИ → СМЕНА ЦВЕТА КУРСОРА
 $(document).ready(function(){
   $(".cb01").mousedown(function(){
     $(".cursor").css("background-color","#FD4E2B");
@@ -39,8 +39,7 @@ $(document).ready(function(){
 
 // РИСОВАЛКА
 let
-  canvas, ctx,
-  brush = {
+  canvas, ctx, brush = {
     x: 0,
     y: 0,
     color: '#FD4E2B',
