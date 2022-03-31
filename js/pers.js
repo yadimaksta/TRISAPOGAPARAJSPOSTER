@@ -1,3 +1,10 @@
+// ПОЯВЛЕНИЕ
+$(document).ready(function(){
+  $(".pers").css({
+    'opacity': '100%',
+  });
+});
+
 // ГЛАЗА
 $(document).ready(function(){
   $(".persMoveArea").mousemove(function(event) {
