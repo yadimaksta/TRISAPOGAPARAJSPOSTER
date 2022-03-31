@@ -2,10 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>«Три сапога — пара»</title>
+    <title>Shoes for aliens // «Три сапога — пара»</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/drag.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -39,9 +38,11 @@
       <svg id="draggable1" class="shapes r1" width="391" height="293" viewBox="0 0 391 293" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="shapesPath" d="M266.701 46.5392C-1.88904 -16.6854 -24.7152 217.643 15.5851 292.93H390.768L381.422 0.349609L266.701 46.5392Z" fill="#FD4E2B"/>
       </svg>
-      <svg id="draggable2" class="shapes r2" width="465" height="441" viewBox="0 0 465 441" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="shapesPath" d="M30.7481 126.952L0.119873 440.206H461.304C384.988 252.575 408.926 160.921 464.208 0C393.997 83.1322 347.984 102.851 247.478 63.4762C175.746 137.625 128.369 151.822 30.7481 126.952Z" fill="#FD4E2B"/>
-      </svg>
+      <div id="draggable2">
+        <svg class="shapes r2" width="465" height="441" viewBox="0 0 465 441" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="shapesPath" d="M30.7481 126.952L0.119873 440.206H461.304C384.988 252.575 408.926 160.921 464.208 0C393.997 83.1322 347.984 102.851 247.478 63.4762C175.746 137.625 128.369 151.822 30.7481 126.952Z" fill="#FD4E2B"/>
+        </svg>
+      </div>
       <svg id="draggable3" class="shapes r3" width="854" height="183" viewBox="0 0 854 183" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="shapesPath" d="M605.269 108.134L592.57 164.926L771.658 175.786L731.712 98.7585L834.936 102.639L853.767 0.183594L42.2385 0.183639L0.714111 122.597L116.613 125.413L90.8263 173.023L258.697 182.216L237.932 110.572L354.594 114.131L332.591 170.541L524.318 157.61L501.229 116.211L605.269 108.134Z" fill="#FD4E2B"/>
       </svg>
@@ -55,6 +56,8 @@
         <path class="shapesPath" d="M130.456 38.5997L108.725 0.341797L0.0732422 0.341797L10.2558 73.3331L42.8208 31.0666L72.6029 113.924L90.5336 41.424L114.462 63.5396L130.456 38.5997Z" fill="#FD4E2B"/>
       </svg>
     </container>
+
+    <!-- ПОДСКАЗКА -->
     <svg class="shapeHint" width="852" height="705" viewBox="0 0 852 705" xmlns="http://www.w3.org/2000/svg" fill="#FFED46" opacity="0%">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M394.473 177.071L402.915 114.32C500.339 142.347 548.431 129.529 622.871 57.16C722.749 99.8666 769.64 81.452 842.827 0C786.586 148.707 759.369 238.181 812.579 403.177L851.811 402.034L838.585 506.111L734.639 505.161L777.025 581.5L746.316 580.514L756.22 596.515L740.939 622.116L716.157 600.644L700.462 674.144L667.833 591.767L636.443 635.329L626.33 576.658L596.568 575.701L607.717 518.21L503.292 529.312L527.703 570.295L490.533 573.866L510.658 645.259L437.593 604.409L455.409 679.51L398.601 612.346L384.549 639.489L362.277 586.189L335.212 588.789L355.731 531.416L238.277 531.174L261.215 602.647L229.523 601.815L214.102 672.139L194.372 640.023L166.108 704.669L149.81 634.923L137.727 660.181L118.638 635.467L126.332 599.104L92.0882 598.204L116.665 549.575L0 550.059L38.2669 425.733L71.1988 424.774C54.6391 329.104 113.033 154.634 330.262 205.745L394.473 177.071Z"/>
     </svg>
