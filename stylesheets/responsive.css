@@ -293,3 +293,90 @@
     background-image: url('../images/drawBack360.svg');
   }
 }
+
+
+
+
+
+/* DRAG */
+/* DRAG */
+/* DRAG */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  .shapesCont {
+    left: -270px;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  .shapesCont {
+    left: -330px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  .shapesCont {
+    left: -482px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .r1 {
+    width: 312px;
+    left: 459px;
+    top: 270px;
+  }
+  .r2 {
+    width: 372px;
+    left: 34px;
+    top: 557px;
+  }
+  .r3 {
+    width: 683px;
+    left: 27px;
+    top: 26px;
+  }
+  .r4 {
+    width: 91px;
+    left: 571px;
+    top: 28px;
+  }
+  .r5 {
+    width: 107px;
+    left: 594px;
+    top: 702px;
+  }
+  .r6 {
+    width: 104px;
+    left: 55px;
+    top: 119px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .r1 {
+    width: 187px;
+    left: 250px;
+    top: 256px;
+  }
+  .r2 {
+    width: 223px;
+    left: -99px;
+    top: 321px;
+  }
+  .r3 {
+    width: 409px;
+    left: -10px;
+    top: -33px;
+  }
+  .r4 {
+    width: 54px;
+    left: 270px;
+    top: 123px;
+  }
+  .r5 {
+    width: 64px;
+    left: 228px;
+    top: 581px;
+  }
+  .r6 {
+    width: 60px;
+    left: 79px;
+    top: 298px;
+  }
+}
