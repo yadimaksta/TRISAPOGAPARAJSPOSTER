@@ -1,12 +1,10 @@
-// ПОЯВЛЕНИЕ
 $(document).ready(function(){
+  // ПОЯВЛЕНИЕ
   $(".pers").css({
     'opacity': '100%',
   });
-});
 
-// ГЛАЗА
-$(document).ready(function(){
+  // ГЛАЗА
   $(".persMoveArea").mousemove(function(event) {
     let eye1 = $(".eye1");
     let x = (eye1.offset().left) + (eye1.width() / 2);
@@ -20,8 +18,6 @@ $(document).ready(function(){
       'transform': 'rotate(' + rot + 'deg)'
     });
   });
-})
-$(document).ready(function(){
   $(".persMoveArea").mousemove(function(event) {
     let eye2 = $(".eye2");
     let x = (eye2.offset().left) + (eye2.width() / 2);
@@ -35,27 +31,21 @@ $(document).ready(function(){
       'transform': 'rotate(' + rot + 'deg)'
     });
   });
-})
 
-// НАВЕДЕНИЕ → ОРАНЖЕВЫЙ ФОН
-$(document).ready(function(){
+  // НАВЕДЕНИЕ → ОРАНЖЕВЫЙ ФОН
   $(".persBody").hover(function(){
     $("body").addClass("orangeBack");
   },function(){
     $("body").removeClass("orangeBack");
   });
-});
 
-// КЛИК → БОЛЬШИЕ ЗРАЧКИ
-$(document).ready(function(){
+  // КЛИК → БОЛЬШИЕ ЗРАЧКИ
   $(".persBody").click(function(){
     $(".eye1").toggleClass("bigEyes");
     $(".eye2").toggleClass("bigEyes");
   });
-});
 
-// ПРЕСС
-$(document).ready(function(){
+  // ПРЕСС
   $(".persBody").mousedown(function(){
     $(this).removeClass("persBody");
     $(this).addClass("objectColorClick");
