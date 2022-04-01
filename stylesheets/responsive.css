@@ -194,13 +194,13 @@
     margin-top: 10px;
   }
   .bm1 {
-    background-image: url("../images/bm2-1.svg");
+    background-image: url("../images/bm2-1.svg") no-repeat;
   }
   .bm2 {
-    background-image: url("../images/bm2-2.svg");
+    background-image: url("../images/bm2-2.svg") no-repeat;
   }
   .bm3 {
-    background-image: url("../images/bm2-3.svg");
+    background-image: url("../images/bm2-3.svg") no-repeat;
   }
   .blackHoleMobile {
     margin: 20px auto;
@@ -260,37 +260,37 @@
 /* PAINT */
 @media only screen and (min-width: 2560px) {
   #draw {
-    background-image: url('../images/drawBack2560.svg');
+    background: url('../images/drawBack2560.svg') no-repeat;
   }
 }
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
   #draw {
-    background-image: url('../images/drawBack1440.svg');
+    background: url('../images/drawBack1440.svg') no-repeat;
   }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
   #draw {
-    background-image: url('../images/drawBack1366.svg');
+    background: url('../images/drawBack1366.svg') no-repeat;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {
   #draw {
-    background-image: url('../images/drawBack1024.svg');
+    background: url('../images/drawBack1024.svg') no-repeat;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #draw {
-    background-image: url('../images/drawBack768.svg');
+    background: url('../images/drawBack768.svg') no-repeat;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 767px) {
   #draw {
-    background-image: url('../images/drawBack414.svg');
+    background: url('../images/drawBack414.svg') no-repeat;
   }
 }
 @media only screen and (max-width: 413px) {
   #draw {
-    background-image: url('../images/drawBack360.svg');
+    background: url('../images/drawBack360.svg') no-repeat;
   }
 }
 
