@@ -496,36 +496,42 @@ body, html {
   transform: rotate(58deg);
   left: 1411px;
   top: 186px;
+  width: 391px;
 }
 .r2 {
   position: absolute;
   transform: rotate(302deg);
   left: 63px;
   top: 184px;
+  width: 465px;
 }
 .r3 {
   position: absolute;
   transform: rotate(118deg);
   left: 677px;
   top: 56px;
+  width: 854px;
 }
 .r4 {
   position: absolute;
   transform: rotate(-152deg);
   left: 606px;
   top: 41px;
+  width: 114px;
 }
 .r5 {
   position: absolute;
   transform: rotate(-43deg);
   left: 1297px;
   top: 676px;
+  width: 134px;
 }
 .r6 {
   position: absolute;
   transform: rotate(118deg);
   left: 619px;
   top: 586px;
+  width: 131px;
 }
 
 
